@@ -87,8 +87,8 @@ Function DownloadFile(strUrl, strFile)
 
     objweb.Send
     If Err.Number <> 0 Then
-        WScript.Echo ":: [ERROR] :: "& Err.Description
-        WScript.Quit 1
+            WScript.Echo ":: [ERROR] :: "& Err.Description
+            WScript.Quit 1
     End If
     On Error GoTo 0
 
